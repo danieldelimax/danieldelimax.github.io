@@ -3,80 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel de Lima</title>
+    <title>Daniel de Lima | Developer Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <script src="assets/js/script.js" defer></script>
 </head>
 <body>
     <header>
         <nav class="container">
-            <a href="#" class="logo">Daniel de Lima</a>
+            <a href="#" class="logo">
+                <span class="logo-text">&lt;Daniel de Lima /&gt;</span>
+            </a>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contacts</a></li>
+                <li><a href="#about" data-text="About">About</a></li>
+                <li><a href="#projects" data-text="Projects">Projects</a></li>
+                <li><a href="#contact" data-text="Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="hero" class="hero-section container">
-            <h1 class="fade-in-up">Hello, I'm Daniel de Lima</h1>
-            <p class="fade-in-up delay-1">Front-end developer & System developer</p>
+            <h1 class="glitch" data-text="Hello, I'm Daniel de Lima">Hello, I'm Daniel de Lima</h1>
+            <p class="typewriter">A Systems Developer with a passion for building robust applications.</p>
         </section>
 
         <section id="about" class="about-section container">
-            <h2 class="slide-in-right">About me</h2>
-            <p class="slide-in-right delay-2">I am a systems developer specializing in **Java, C/C++, and Python**. I have a passion for building robust and scalable applications, with a focus on clean code and efficient solutions.</p>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I am a systems developer specializing in Java, C/C++, Dart, and Python. I thrive on tackling complex challenges and building efficient, scalable solutions. My focus is on writing clean, maintainable code and using innovative approaches to solve real-world problems.</p>
+            </div>
         </section>
 
         <section id="projects" class="projects-section container">
-            <h2 class="slide-in-left">Projects</h2>
+            <h2 class="section-title">My Projects</h2>
             <div class="projects-grid">
-                <div class="project-card fade-in-up delay-3">
-                    <h3>Tic Tac Toe</h3>
+                <div class="project-card">
+                    <h3 class="card-title">Tic Tac Toe (C++)</h3>
                     <p>A console-based Tic-Tac-Toe game developed in C++ with an unbeatable AI opponent. This project demonstrates core C++ concepts, including object-oriented programming, classes, and the Minimax algorithm for game AI.</p>
-                    <a href="https://github.com/danieldelimax/tic-tac-toe" target="_blank" class="card-link">View on GitHub</a>
+                    <a href="https://github.com/danieldelimax/tic-tac-toe" target="_blank" class="card-link">View on GitHub <span class="arrow">→</span></a>
                 </div>
-                <div class="project-card fade-in-up delay-4">
-                    <h3>Chat Server-Client</h3>
-                    <p>This is a simple chat application built in Java, designed to facilitate real-time text communication between multiple users on the same local network, using Java's Socket programming.</p>
-                    <a href="https://github.com/danieldelimax/Chat-Application" target="_blank" class="card-link">View on GitHub</a>
+                <div class="project-card">
+                    <h3 class="card-title">Chat Server-Client</h3>
+                    <p>A simple chat application built in Java, designed to facilitate real-time text communication between multiple users on the same local network, using Java's Socket programming.</p>
+                    <a href="https://github.com/danieldelimax/Chat-Application" target="_blank" class="card-link">View on GitHub <span class="arrow">→</span></a>
                 </div>
-                <div class="project-card fade-in-up delay-5">
-                    <h3>Snake Game</h3>
-                    <p>This is a classic Snake Game developed in Java, designed with a focus on modularity and clean architecture. The project is split into distinct packages for game logic, GUI, and game entities.</p>
-                    <a href="https://github.com/danieldelimax/Snake-game" target="_blank" class="card-link">View on GitHub</a>
+                <div class="project-card">
+                    <h3 class="card-title">Snake Game</h3>
+                    <p>A classic Snake Game developed in Java, designed with a focus on modularity and clean architecture. The project is split into distinct packages for game logic, GUI, and game entities.</p>
+                    <a href="https://github.com/danieldelimax/Snake-game" target="_blank" class="card-link">View on GitHub <span class="arrow">→</span></a>
                 </div>
-                <div class="project-card fade-in-up delay-3">
-                    <h3>Tic Tac Toe Web</h3>
+                <div class="project-card">
+                    <h3 class="card-title">Tic Tac Toe (Web)</h3>
                     <p>This web-based Tic-Tac-Toe game allows two players to compete against each other. Upon loading, the page prompts users to enter their names. The game board is then set up, and the players take turns.</p>
-                    <a href="https://github.com/danieldelimax/tic-tac-toe-web" target="_blank" class="card-link">View on GitHub</a>
+                    <a href="https://github.com/danieldelimax/tic-tac-toe-web" target="_blank" class="card-link">View on GitHub <span class="arrow">→</span></a>
                 </div>
-                <div class="project-card fade-in-up delay-4">
-                    <h3>Password generator</h3>
-                    <p>This project is a lightweight and robust command-line password generator built with the Dart programming language. The tool provides a simple and secure way to create strong, random passwords with a customizable length.</p>
-                    <a href="https://github.com/danieldelimax/password-creater" target="_blank" class="card-link">View on GitHub</a>
+                <div class="project-card">
+                    <h3 class="card-title">Password Generator</h3>
+                    <p>A lightweight and robust command-line password generator built with the Dart programming language. The tool provides a simple and secure way to create strong, random passwords with a customizable length.</p>
+                    <a href="https://github.com/danieldelimax/password-creater" target="_blank" class="card-link">View on GitHub <span class="arrow">→</span></a>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="contact-section container">
-            <h2 class="slide-in-right">Contact</h2>
-            <p class="slide-in-right delay-6">Feel free to reach out to me! You can connect with me on social media or send an email.</p>
-            <ul class="social-links fade-in-up delay-7">
-                <li><a href="https://www.linkedin.com/in/daniel-rodrigo-vicente-de-oliveira-lima-101809345/" target="_blank" class="social-link linkedin">LinkedIn</a></li>
-                <li><a href="https://github.com/danieldelimax" target="_blank" class="social-link github">GitHub</a></li>
-                <li><a href="https://instagram.com/oxlimaa" target="_blank" class="social-link instagram">Instagram</a></li>
-                <li><a href="mailto:danielrodrigovolima@icloud.com" class="social-link email">Email</a></li>
-                <li><a href="assets/pdf/curriculo.pdf" download class="social-link cv-link">Download CV</a></li>
+            <h2 class="section-title">Get in Touch</h2>
+            <p>Feel free to connect with me. Let's build something great together.</p>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/daniel-rodrigo-vicente-de-oliveira-lima-101809345/" target="_blank" class="social-link" data-icon="linkedin">LinkedIn</a></li>
+                <li><a href="https://github.com/danieldelimax" target="_blank" class="social-link" data-icon="github">GitHub</a></li>
+                <li><a href="https://instagram.com/oxlimaa" target="_blank" class="social-link" data-icon="instagram">Instagram</a></li>
+                <li><a href="mailto:danielrodrigovolima@icloud.com" class="social-link" data-icon="email">Email</a></li>
+                <li><a href="assets/pdf/curriculo.pdf" download class="social-link" data-icon="cv">Download CV</a></li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Daniel Rodrigo Vicente de Oliveira Lima. All rights reserved.</p>
+        <p>&copy; 2025 Daniel de Lima. All rights reserved.</p>
     </footer>
 </body>
 </html>
