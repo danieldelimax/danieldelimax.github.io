@@ -226,6 +226,16 @@ h2:hover::after {
 .social-link.instagram { background-color: #C13584; }
 .social-link.email { background-color: #a42a22; }
 
+.social-link.cv-link {
+    background-color: var(--accent-color);
+    color: var(--card-bg);
+}
+
+.social-link.cv-link:hover {
+    background-color: #ff8c00;
+    transform: translateY(-5px) scale(1.05);
+}
+
 .social-link:hover {
     transform: translateY(-5px) scale(1.05);
 }
@@ -283,23 +293,3 @@ footer {
 .delay-5 { animation-delay: 1.5s; }
 .delay-6 { animation-delay: 1.8s; }
 .delay-7 { animation-delay: 2.1s; }
-
-.particle {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: moveParticles 20s infinite ease-in-out;
-    z-index: -1;
-}
-
-@keyframes moveParticles {
-    0%, 100% {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: translateY(50vh) scale(1.5);
-        opacity: 0.5;
-    }
-}
